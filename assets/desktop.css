@@ -1,0 +1,9 @@
+@import url(css/desktop/_bootstrap.css);
+@import url(css/desktop/_default.css);
+
+@import url(blocks/modal/bootstrap.css);
+@import url(blocks/modal/index.css);
+
+@import url(css/desktop/main.css);
+@import url(css/desktop/footer.css);
+@import url(css/desktop/header.css);

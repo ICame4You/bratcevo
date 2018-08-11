@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Братцево</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="/bundles/css/desktop.min.css" rel="stylesheet">
+    </head>
+<body>
+
+
+<!-- ############# -->
+<!-- CONTENT START -->
+<!-- ############# -->
+
+<style>
+    body {
+        margin: 10px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    header,
+    footer {
+        display: none;
+    }
+</style>
+
+<h2>Модальные окна</h2>
+<button data-modal-video data-src="https://www.youtube.com/embed/P38acjc8DyY" class="button">Видео</button>
+<button data-toggle="modal" data-target=".jsModalError" class="button">Ошибка</button>
+<button  data-toggle="modal" data-target=".jsModalSubscribe" class="button">Подписаться</button>
+<button data-toggle="modal" data-target=".jsModalSuccess" class="button">Спасибо</button>
+<button data-toggle="modal" data-target=".jsModalLang-am" class="button">jsModalLang-am</button>
+<button data-toggle="modal" data-target=".jsModalLang-kz" class="button">jsModalLang-kz</button>
+
+<h3>Олапик</h3>
+<button data-modal-olapic data-modal-class=".jsModalGallery" class="button">Олапик галерея</button>
+
+<!-- ########### -->
+<!-- CONTENT END -->
+<!-- ########### -->
+
+<div tabindex="-1" class="modal fade modal-default modal-message jsModalError">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-head">
+                <a data-dismiss="modal" class="modal-close"></a>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title jsModalErrorMessage">
+                    Ошибка
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-video jsModalVideo" data-hash="modal_video">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-video__inner">
+                <a data-dismiss="modal" class="modal-close"></a>
+                <div class="modal-video__iframe"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default modal-message jsModalSuccess">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-head">
+                <a data-dismiss="modal" class="modal-close"></a>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">СПАСИБО ЗА ПОДПИСКУ!</div>
+                <div class="modal-desc">Рассылка на email<br>успешно активирована.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default modal-gallery-olapic jsModalGallery">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="modal-close"></a>
+            <div class="modal__inner">
+                <iframe data-src="/olapic/gallery-olapic-ru-example.html" class="modal-gallery-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-subscribe jsModalSubscribe">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-head">
+                <a data-dismiss="modal" class="modal-close"></a>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">Подпишись на рассылку и узнавай первой о наших новинках, специальных предложениях и новостях бренда!</div>
+                <div class="modal-desc">
+                    <form>
+                        <input class="input-text" type="text" required placeholder="Твое имя">
+                        <input class="input-text" type="email" required placeholder="Твой email">
+                        <label class="input-check">
+                            <input type="checkbox" required id="check1" checked="checked">
+                            <span class="checkmark"></span>
+                            <div class="check-text">Я согласен с <a href="https://www.oriflame.ru/customer-service/privacy-protection-policy" target="_blank">правилами обработки персональных данных</a></div>
+                        </label>
+                        <label class="input-check">
+                            <input type="checkbox" required id="check2" checked="checked">
+                            <span class="checkmark"></span>
+                            <div class="check-text">Я хочу получать новости Орифлэйм Россия</div>
+                        </label>
+                        <button type="submit" class="form-button">
+                            <div class="form-button-text">Подписаться</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default modal-lang jsModalLang-am">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="modal__close"></a>
+            <div class="modal-lang__title">выбрать язык</div>
+            <div class="modal-lang__buttons">
+                <a href="#">Армянский</a>
+                <a href="#" class="active">Русский</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default modal-lang jsModalLang-kz">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="modal__close"></a>
+            <div class="modal-lang__title">выбрать язык</div>
+            <div class="modal-lang__buttons">
+                <a href="#">Казахский</a>
+                <a href="#" class="active">Русский</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default modal-lang modal-lang-confirm jsModalCountryConfirm">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="modal__close"></a>
+            <div class="modal-lang__title2">
+                <p><span>Ваша страна:</span><strong>Казахстан</strong></p>
+                <div>
+                    <a class="jsModalCountryConfirmListToggle" href="#">Изменить</a>
+                    <ul>
+                        <li><a href="#">россия</a></li>
+                        <li><a href="#">азербайджан</a></li>
+                        <li><a href="#">армения</a></li>
+                        <li><a href="#">грузия</a></li>
+                        <li><a href="#">Беларусь</a></li>
+                        <li><a href="#">казахстан</a></li>
+                        <li><a href="#">Кыргызстан</a></li>
+                        <li><a href="#">молдавия</a></li>
+                        <li><a href="#">монголия</a></li>
+                        <li><a href="#">украина</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-lang__buttons modal-lang__buttons2">
+                <a href="#" class="active">Подтвердить</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/bundles/webpack/vendor.bundle.js"></script>
+<script src="/bundles/webpack/desktop.bundle.js"></script>
+
+</body>
+</html>
+
