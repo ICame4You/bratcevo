@@ -8,4 +8,52 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-BoldItalic.eot');
+    src: url('AvenirNextCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-BoldItalic.woff') format('woff'),
+    url('AvenirNextCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Regular.eot');
+    src: url('AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+    url('AvenirNextCyr-Regular.woff2') format('woff2'),
+    url('AvenirNextCyr-Regular.woff') format('woff'),
+    url('AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Medium.eot');
+    src: url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('AvenirNextCyr-Medium.woff2') format('woff2'),
+    url('AvenirNextCyr-Medium.woff') format('woff'),
+    url('AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+body {
+    font-family: 'Avenir Next Cyr', sans-serif;
+    color: #000;
+}
+.container {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

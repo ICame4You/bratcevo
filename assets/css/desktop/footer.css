@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 30px;
+    min-height: 250px;
+    background: #1c1c1c;
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        &-item {
+            margin-right: 115px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-link {
+            font-family: 'EB Garamond', serif;
+            font-size: 18px;
+            color: #f7f7f7;
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: #f7f7f7;
+            }
+        }
+    }
+    &__logo {
+        &-link {
+            display: block;
+            margin: 0 auto;
+            width: 215px;
+        }
+    }
+}

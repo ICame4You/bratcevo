@@ -1,21 +1,108 @@
 @@include('templates/desktop/include/header.html')
 
 <header class="header">
-    <div class="header__inner">
+    <div class="header__inner container">
         <div class="header__logo">
-            <a href="" class="header__logo-link">
+            <a href="#" class="header__logo-link">
                 <img src="/images/desktop/main/logo.png" alt="" class="img">
             </a>
         </div>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item">Об усадьбе</li>
-                <li class="header__nav-item">Посетители</li>
-                <li class="header__nav-item">Новости</li>
-                <li class="header__nav-item">Контакты</li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Об усадьбе</a>
+                    <ul class="header__subnav-list">
+                        <li class="header__subnav-item">
+                            <a href="" class="header__subnav-item">История усадьбы <img src="/images/desktop/main/mansion.jpg" alt=""></a>
+                        </li>
+                        <li class="header__subnav-item">
+                            <a href="" class="header__subnav-item">Облик усадьбы <img src="/images/desktop/main/mansion2.jpg" alt=""></a>
+                        </li>
+                        <li class="header__subnav-item">
+                            <a href="" class="header__subnav-item"><span>спецпроект:</span> #ротондамиловид <img src="/images/desktop/main/mansion3.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Посетителям</a>
+                    <ul class="header__subnav-list">
+                        <li class="header__subnav-item">
+                            <a href="" class="header__subnav-item">организация свадеб и других мероприятий <img src="/images/desktop/main/guests.jpg" alt=""></a>
+                        </li>
+                        <li class="header__subnav-item">
+                            <a href="" class="header__subnav-item">Экскурсии <img src="/images/desktop/main/guests2.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Новости</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
             </ul>
         </nav>
     </div>
 </header>
+<main>
+    <section class="intro intro_main">
+        <div class="intro__img">
+            <img src="/images/desktop/main/logo_bratcevo.png" alt="" class="img">
+        </div>
+    </section>
+    <section class="main-sections">
+        <div class="container">
+            <section class="section special">
+                <h3 class="section__title">Спецпроект</h3>
+                <div class="special__inner">
+                    <h4 class="special__title">Возрождение <br>усадьбы «Братцево»</h4>
+                    <p class="text text_special">Усадьба Братцево — памятник архитектуры и садово—паркового искусства. На ее территории находится уникальное сооружение — беседка-ротонда. Она расположена на высоком обрывистом мысу с прекрасным видом на пруды и долину реки Сходни. На сегодняшний день это единственная сохранившаяся в Подмосковье 10-ти колонная беседка-ротонда «Миловид» («храм Екатерины II»).</p>
+                    <p class="text text_special">К сожалению, в данный момент она разрушается. Реставрация и восстановление поможет не только вернуть место, где так приятно посидеть теплым летним вечером и отдохнуть от повседневных забот, но и вернуть «сердце» усадьбы, ее уникальнотсь и неповторимость.</p>
+                    <a href="#" class="learn-more">Подробнее</a>
+                </div>
+            </section>
+            <section class="section">
+                <h3 class="section__title">Новости</h3>
+                <div class="section__inner">
+                    <ul class="news">
+                        <li class="news-item">
+                            <p class="news-item__theme">Спецпроект</p>
+                            <div class="news-item__img">
+                                <img src="/images/desktop/main/news1.jpg" alt="" class="img">
+                            </div>
+                            <p class="news-item__date">16 сентября 2018</p>
+                            <a href="" class="news-item__title">Проект по развитию усадеб «Место Действия»</a>
+                        </li>
+                        <li class="news-item">
+                            <p class="news-item__theme">Спецпроект</p>
+                            <div class="news-item__img">
+                                <img src="/images/desktop/main/news1.jpg" alt="" class="img">
+                            </div>
+                            <p class="news-item__date">16 сентября 2018</p>
+                            <a href="" class="news-item__title">Проект по развитию усадеб «Место Действия»</a>
+                        </li>
+                        <li class="news-item">
+                            <p class="news-item__theme">Спецпроект</p>
+                            <div class="news-item__img">
+                                <img src="/images/desktop/main/news1.jpg" alt="" class="img">
+                            </div>
+                            <p class="news-item__date">16 сентября 2018</p>
+                            <a href="" class="news-item__title">Проект по развитию усадеб «Место Действия»</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="show-more"><span class="show-more__plus"></span>Смотреть больше</a>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer__nav">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Об усадьбе</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Посетителям</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+        </ul>
+        <a href="#" class="footer__logo-link">
+            <img src="/images/desktop/main/logo_white.png" alt="" class="img">
+        </a>
+    </div>
+</footer>
 
 @@include('templates/desktop/include/footer.html')
